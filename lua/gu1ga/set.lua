@@ -1,5 +1,4 @@
 vim.opt.nu = true
-		print("Comecou")
 vim.opt.relativenumber = true
 
 vim.opt.hlsearch = false

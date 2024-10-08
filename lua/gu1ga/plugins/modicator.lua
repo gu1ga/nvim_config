@@ -1,10 +1,8 @@
-return
-{
+return {
 	'mawkler/modicator.nvim',
-	dependencies = color_scheme.color_scheme,
-	config = function ()
+	dependencies = 'loctvl842/monokai-pro.nvim',
+	config = function()
 		require('modicator').setup({
-			show_warnings = true,
 		})
-	end
+	end,
 }

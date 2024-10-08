@@ -12,6 +12,5 @@ return
 			})
 		vim.cmd([[colorscheme monokai-pro]])
 		end
-	},
-	color_scheme
+	}
 }
