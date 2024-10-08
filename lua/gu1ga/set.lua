@@ -5,7 +5,9 @@ vim.opt.relativenumber = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.termguicolors = true
+vim.o.termguicolors = true
+vim.o.cursorline = true
+vim.o.number = true
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
