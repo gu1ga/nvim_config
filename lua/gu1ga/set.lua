@@ -34,5 +34,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'gs', vim.lsp.buf.signature_help, { buffer = args.buf })
 		vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, { buffer = args.buf })
 		vim.keymap.set('n', '<F4>', vim.lsp.buf.code_action, { buffer = args.buf })
+		vim.keymap.set('n', '<leader>dj', vim.diagnostic.goto_next, { buffer = args.buf })
+		vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { buffer = args.buf })
 	end,
 })
