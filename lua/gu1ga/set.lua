@@ -3,6 +3,8 @@ vim.opt.relativenumber = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 
 vim.o.termguicolors = true
 vim.o.cursorline = true
@@ -15,12 +17,12 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+-- Adding .PY with capital letters
 vim.filetype.add {
 	extension = {
 		PY = 'python',
 	},
 }
-
 
 --LSP STUFF
 vim.api.nvim_create_autocmd('LspAttach', {
