@@ -1,6 +1,6 @@
 return {
 	'mawkler/modicator.nvim',
-	-- dependencies = 'loctvl842/monokai-pro.nvim',
+	dependencies = 'nobbmaestro/nvim-andromeda',
 	config = function()
 		require('modicator').setup({
 		})
