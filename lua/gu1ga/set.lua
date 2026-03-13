@@ -36,15 +36,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'gr', vim.lsp.buf.references, { buffer = args.buf })
 		vim.keymap.set('n', 'gs', vim.lsp.buf.signature_help, { buffer = args.buf })
 		vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, { buffer = args.buf })
-		-- vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)
-		vim.keymap.set("n", "<leader>ca", function()
-			require("tiny-code-action").code_action()
-		end, { noremap = true, silent = true })
+		vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)
+		-- vim.keymap.set("n", "<leader>ca", function()
+		-- 	require("tiny-code-action").code_action()
+		-- end, { noremap = true, silent = true })
 		vim.keymap.set('n', '<leader>dj', vim.diagnostic.goto_next, { buffer = args.buf })
 		vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { buffer = args.buf })
 		vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { buffer = args.buf })
 	end,
 })
 
--- Hover Background Color
-vim.api.nvim_set_hl(0, 'NormalFloat', {guibg='#1e1e2e'})
+vim.highlight.priorities.semantic_tokens = 95

@@ -5,9 +5,6 @@ return {
 
         -- optional picker via telescope
         {"nvim-telescope/telescope.nvim"},
-        -- optional picker via fzf-lua
-        {"ibhagwan/fzf-lua"},
-        -- .. or via snacks
         {
           "folke/snacks.nvim",
           opts = {
@@ -16,5 +13,7 @@ return {
         }
     },
     event = "LspAttach",
-    opts = {},
+    opts = {
+		backend="vim",
+	},
 }

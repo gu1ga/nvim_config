@@ -34,13 +34,13 @@ return {
 			handlers = {
 				function(server_name) -- default handler (optional)
 --
-					require("lspconfig")[server_name].setup {
+					vim.lsp.config[server_name].setup {
 						capabilities = capabilities,
 					}
 				end,
 
 				["lua_ls"] = function()
-					local lspconfig = require("lspconfig")
+					local lspconfig = vim.lsp.config
 					lspconfig.lua_ls.setup {
 						capabilities = capabilities,
 						settings = {
